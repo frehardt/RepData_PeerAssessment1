@@ -16,7 +16,6 @@ Load the data (i.e. read.csv())
 
 activity <- read.csv("activity.csv", stringsAsFactors = FALSE)
 
-
 ```
 
 
@@ -188,6 +187,5 @@ plotWeekdays <- qplot(date, avgStepsPerDay, data = onlyWeekdays, geom = "line", 
 plotWeekends <- qplot(date, avgStepsPerDay, data = onlyWeekends, geom = "line", main="Weekends")
 
 grid.arrange(plotWeekdays, plotWeekends, ncol=1)
-
 
 ```
